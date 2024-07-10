@@ -1,0 +1,55 @@
+.gates_body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+section {
+  margin-top: 7px;
+}
+h1 {
+  text-align: center;
+}
+.quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quotes__item_h3 {
+  text-align: center;
+}
+.biography {
+  text-align: center;
+}
+.biography__item_info {
+  display: flex;
+  justify-content: space-between;
+}
+.biography__info_foto {
+  width: 25%;
+  height: 25%;
+  border-radius: 15px;
+}
+.biography__info_text {
+  width: 70%;
+  text-align: left;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links__item_h3 {
+  text-align: center;
+}
+.lenks__item_a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (width < 768px) {
+  .biography__item_info > p {
+    margin-top: 8px;
+    height: 125px;
+    overflow: auto;
+  }
+}

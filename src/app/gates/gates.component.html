@@ -1,0 +1,36 @@
+<section class="gates_body" itemscope itemtype="https://schema.org/Person">
+  <h1 itemprop="name">{{ name }}</h1>
+
+  <section class="quotes" itemscope itemtype="https://schema.org/CreativeWork">
+    <h3 class="quotes__item_h3">Цитати Білла Гейтса:</h3>
+    <q class="quotes_item_quote" *ngFor="let quote of quotes" itemprop="text">
+      {{ quote }}
+    </q>
+  </section>
+
+  <section class="biography">
+    <h3 class="biography__item_h3">Біографія:</h3>
+    <section class="biography__item_info" itemprop="description">
+      <img
+        class="biography__info_foto"
+        src="{{ image }}"
+        alt="{{ name }}"
+        itemprop="image"
+      />
+      <p class="biography__info_text">{{ biography }}</p>
+    </section>
+  </section>
+
+  <section class="links">
+    <h3 class="links__item_h3">Посилання пов’язані із Біллом Гейтсом:</h3>
+    <section class="lenks__item_a">
+      <a
+        *ngFor="let link of links"
+        href="{{ link }}"
+        target="_blank"
+        itemprop="url"
+        >{{ link }}</a
+      >
+    </section>
+  </section>
+</section>
